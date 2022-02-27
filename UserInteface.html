@@ -141,7 +141,6 @@ p {
 
 </style>
 
-
 </head>
 
 <body>
@@ -149,14 +148,14 @@ p {
     <div class="container">
         <h2>Sign Up</h2>
 
-        <form action="">
+        <form action="/signUpForm" method = "POST">
             <div class="form-item-username">
-                <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" require>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" require>
             </div>
 
             <div class="form-item">
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email" require>
             </div>
 
             <div class="form-item">
@@ -164,8 +163,8 @@ p {
                 <span class="pwd-format">
                     8-15 AlphaNumeric Characters
                 </span>
-                <input type="password" name="password" id="password" placeholder="Enter password">
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                <input type="password" name="password" id="password" placeholder="Enter password" require>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" require>
             </div>
 
             <div class="accept-box">
@@ -174,7 +173,7 @@ p {
             </div>
 
             <div class="form-btns">
-                <button class="signup" type="submit" disabled>Sign Up</button>
+                <button class="signup" type="submit" >Sign Up</button>
                 <div class="options">
                     Already hav an account? <a href="#">Login here</a>
                 </div>
